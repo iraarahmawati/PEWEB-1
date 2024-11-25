@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Global Scope dan Local Scope</title>
+</head>
+<body>
+    <h1>Perbedaan antara Global Scope dan Local Scope</h1>
+    <p>Buka konsol untuk melihat hasilnya.</p>
+
+    <script>
+    
+        let globalVar = "Saya berada di global scope"; 
+
+        function testScope() {
+            let localVar = "Saya berada di local scope"; 
+            
+            console.log(globalVar);  
+            console.log(localVar);   
+        }
+
+        
+        testScope();
+
+        console.log(globalVar);  
+        console.log(localVar);   
+    </script>
+</body>
+</html>
