@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tambah Kelas Active</title>
+    <style>
+        .active {
+            color: white;
+            background-color: blue;
+            padding: 5px;
+            border-radius: 3px;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li id="menu">Beranda</li>
+            <li>Tentang</li>
+            <li>Kontak</li>
+        </ul>
+    </nav>
+    <button id="tombol">Aktifkan Menu</button>
+
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script>
+        // Menambahkan kelas "active" ke elemen dengan ID "menu" saat tombol diklik
+        $('#tombol').click(function() {
+            $('#menu').addClass('active');
+        });
+    </script>
+</body>
+</html>
